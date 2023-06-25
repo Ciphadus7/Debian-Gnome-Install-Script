@@ -12,13 +12,12 @@ sudo apt-get install -yy htop gdebi vim geany git dconf-cli uuid-runtime
 # Remove LibreOffice. Dont like it
 
 sudo apt-get purge -yy libreoffice*
-sudo apt autoremove
-
+sudo apt autoremove -yy
 
 # Remove bloat/uesless stuff from GNOME
 
 sudo apt purge -yy gnome-2048 gnome-chess gnome-games gnome-mahjongg gnome-mines gnome-tetravex gnome-sudoku aisleriot evolution* five-or-more four-in-a-row hitori gnome-klotski gnome-robots gnome-taquin gnome-nibbles quadrapassel swell-foop
-sudo apt autoremove
+sudo apt autoremove -yy
 
 # Set up a colour scheme for your terminal
 
@@ -30,5 +29,7 @@ cd gogh
 export TERMINAL=gnome-terminal
 cd installs
 ./sea-shells.sh
+
+echo "You're good to go!"
 
 
