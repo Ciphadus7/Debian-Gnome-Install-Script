@@ -20,10 +20,17 @@ sudo apt purge -yy gnome-2048 gnome-chess gnome-games gnome-mahjongg gnome-mines
 sudo apt autoremove -yy
 
 
-# Install necessary applications
+# Install and use Flatpak for application installations[i prefer this for various apps due to ease of installation across distros]
+sudo apt install -yy flatpak
+sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+sudo apt install gnome-software-plugin-flatpak
 
-sudo apt-get install -yy discord steam gimp spotify-client virtualbox
-
+sudo flatpak install --noninteractive flathub com.discordapp.Discord 
+sudo flatpak install --noninteractive flathub com.valvesoftware.Steam 
+sudo flatpak install --noninteractive flathub com.spotify.Client
+sudo flatpak install --noninteractive flathub com.tomjwatson.Emote
+sudo flatpak install --noninteractive flathub org.gimp.GIMP
+sudo flatpak install --noninteractive flathub org.videolan.VLC
 
 # Install ONLYOFFICE Desktop Editors
 
@@ -35,25 +42,19 @@ sudo rm -f onlyoffice-desktopeditors_amd64.deb
 
 # Set up a colour scheme for your terminal
 
-mkdir -p "$HOME/src"
-cd "$HOME/src"
-sudo git clone https://github.com/Gogh-Co/Gogh.git gogh
-cd gogh
+#mkdir -p "$HOME/src"
+#cd "$HOME/src"
+#sudo git clone https://github.com/Gogh-Co/Gogh.git gogh
+#cd gogh
 
-export TERMINAL=gnome-terminal
-cd installs
-./sea-shells.sh
-
-
-
-
-
-
+#export TERMINAL=gnome-terminal
+#cd installs
+#./sea-shells.sh
 
 
 
 
 
 echo "You're good to go!"
-
+echo "You should restart for flatpak stuff"
 
