@@ -6,7 +6,7 @@
 
 cd ~
 sudo apt-get update -qq
-sudo apt-get install -yy htop gdebi vim geany git dconf-cli uuid-runtime
+sudo apt-get install -yy htop gdebi vim geany git dconf-cli uuid-runtime neofetch wget
 
 
 # Remove LibreOffice. Dont like it
@@ -19,6 +19,20 @@ sudo apt autoremove -yy
 sudo apt purge -yy gnome-2048 gnome-chess gnome-games gnome-mahjongg gnome-mines gnome-tetravex gnome-sudoku aisleriot evolution* five-or-more four-in-a-row hitori gnome-klotski gnome-robots gnome-taquin gnome-nibbles quadrapassel swell-foop
 sudo apt autoremove -yy
 
+
+# Install necessary applications
+
+sudo apt-get install -yy discord steam gimp spotify-client virtualbox
+
+
+# Install ONLYOFFICE Desktop Editors
+
+cd ~
+cd Downloads
+wget https://download.onlyoffice.com/install/desktop/editors/linux/onlyoffice-desktopeditors_amd64.deb 
+sudo gdebi -n onlyoffice-desktopeditors_amd64.deb
+sudo rm -f onlyoffice-desktopeditors_amd64.deb
+
 # Set up a colour scheme for your terminal
 
 mkdir -p "$HOME/src"
@@ -29,6 +43,16 @@ cd gogh
 export TERMINAL=gnome-terminal
 cd installs
 ./sea-shells.sh
+
+
+
+
+
+
+
+
+
+
 
 echo "You're good to go!"
 
