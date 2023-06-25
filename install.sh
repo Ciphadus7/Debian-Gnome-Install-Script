@@ -23,7 +23,7 @@ sudo apt autoremove -yy
 # Install and use Flatpak for application installations[i prefer this for various apps due to ease of installation across distros]
 sudo apt install -yy flatpak
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-sudo apt install gnome-software-plugin-flatpak
+sudo apt install -yy gnome-software-plugin-flatpak
 
 sudo flatpak install --noninteractive flathub com.discordapp.Discord 
 sudo flatpak install --noninteractive flathub com.valvesoftware.Steam 
