@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Install Script For Debian 11 GNOME according to stuff that I like
+# Install Script For Debian and Ubuntu according to stuff that I like
 
 # Install basic system utilities and necessities
 
@@ -31,14 +31,8 @@ sudo flatpak install --noninteractive flathub com.spotify.Client
 sudo flatpak install --noninteractive flathub com.tomjwatson.Emote
 sudo flatpak install --noninteractive flathub org.gimp.GIMP
 sudo flatpak install --noninteractive flathub org.videolan.VLC
-
-# Install ONLYOFFICE Desktop Editors
-
-cd ~
-cd Downloads
-wget https://download.onlyoffice.com/install/desktop/editors/linux/onlyoffice-desktopeditors_amd64.deb 
-sudo gdebi -n onlyoffice-desktopeditors_amd64.deb
-sudo rm -f onlyoffice-desktopeditors_amd64.deb
+sudo flatpak install --noninteractive flathub org.audacityteam.Audacity
+sudo flatpak install --noninteractive flathub org.onlyoffice.desktopeditors
 
 # Set up a colour scheme for your terminal
 
