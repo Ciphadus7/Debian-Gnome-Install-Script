@@ -34,6 +34,12 @@ sudo flatpak install --noninteractive flathub org.videolan.VLC
 sudo flatpak install --noninteractive flathub org.audacityteam.Audacity
 sudo flatpak install --noninteractive flathub org.onlyoffice.desktopeditors
 
+
+
+#Upgrade cos y not
+sudo apt-get upgrade -yy
+
+
 # Set up a colour scheme for your terminal
 
 #mkdir -p "$HOME/src"
@@ -46,9 +52,33 @@ sudo flatpak install --noninteractive flathub org.onlyoffice.desktopeditors
 #./sea-shells.sh
 
 
+congrats="                                                                                                                                                            
+                                                                                                                                                            
+        CCCCCCCCCCCCC                                                                                                   tttt                            !!! 
+     CCC::::::::::::C                                                                                                ttt:::t                           !!:!!
+   CC:::::::::::::::C                                                                                                t:::::t                           !:::!
+  C:::::CCCCCCCC::::C                                                                                                t:::::t                           !:::!
+ C:::::C       CCCCCC   ooooooooooo   nnnn  nnnnnnnn       ggggggggg   gggggrrrrr   rrrrrrrrr   aaaaaaaaaaaaa  ttttttt:::::ttttttt        ssssssssss   !:::!
+C:::::C               oo:::::::::::oo n:::nn::::::::nn    g:::::::::ggg::::gr::::rrr:::::::::r  a::::::::::::a t:::::::::::::::::t      ss::::::::::s  !:::!
+C:::::C              o:::::::::::::::on::::::::::::::nn  g:::::::::::::::::gr:::::::::::::::::r aaaaaaaaa:::::at:::::::::::::::::t    ss:::::::::::::s !:::!
+C:::::C              o:::::ooooo:::::onn:::::::::::::::ng::::::ggggg::::::ggrr::::::rrrrr::::::r         a::::atttttt:::::::tttttt    s::::::ssss:::::s!:::!
+C:::::C              o::::o     o::::o  n:::::nnnn:::::ng:::::g     g:::::g  r:::::r     r:::::r  aaaaaaa:::::a      t:::::t           s:::::s  ssssss !:::!
+C:::::C              o::::o     o::::o  n::::n    n::::ng:::::g     g:::::g  r:::::r     rrrrrrraa::::::::::::a      t:::::t             s::::::s      !:::!
+C:::::C              o::::o     o::::o  n::::n    n::::ng:::::g     g:::::g  r:::::r           a::::aaaa::::::a      t:::::t                s::::::s   !!:!!
+ C:::::C       CCCCCCo::::o     o::::o  n::::n    n::::ng::::::g    g:::::g  r:::::r          a::::a    a:::::a      t:::::t    ttttttssssss   s:::::s  !!! 
+  C:::::CCCCCCCC::::Co:::::ooooo:::::o  n::::n    n::::ng:::::::ggggg:::::g  r:::::r          a::::a    a:::::a      t::::::tttt:::::ts:::::ssss::::::s     
+   CC:::::::::::::::Co:::::::::::::::o  n::::n    n::::n g::::::::::::::::g  r:::::r          a:::::aaaa::::::a      tt::::::::::::::ts::::::::::::::s  !!! 
+     CCC::::::::::::C oo:::::::::::oo   n::::n    n::::n  gg::::::::::::::g  r:::::r           a::::::::::aa:::a       tt:::::::::::tt s:::::::::::ss  !!:!!
+        CCCCCCCCCCCCC   ooooooooooo     nnnnnn    nnnnnn    gggggggg::::::g  rrrrrrr            aaaaaaaaaa  aaaa         ttttttttttt    sssssssssss     !!! 
+                                                                    g:::::g                                                                                 
+                                                        gggggg      g:::::g                                                                                 
+                                                        g:::::gg   gg:::::g                                                                                 
+                                                         g::::::ggg:::::::g                                                                                 
+                                                          gg:::::::::::::g                                                                                  
+                                                            ggg::::::ggg                                                                                    
+                                                               gggggg                                                                                       
+"
 
-
-
-echo "You're good to go!"
-echo "You should restart for flatpak stuff"
+echo $congrats
+echo "You should restart for flatpak stuff!"
 
